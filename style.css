@@ -1,0 +1,140 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 24px;
+}
+
+
+.logo{
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-image: url(https://fakeimg.pl/250x250/);
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.nav li a{
+    text-decoration: none;
+    display:block;
+    background:#3399FF;
+	color:white;
+    text-align:center;
+    padding:10px;
+	font-weight:bold;
+}
+
+.nav li a:hover{
+    background-color: orange;
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.news{
+    border: 2px solid black;
+    width: 75%;
+    padding: 10px;
+
+}
+
+.news h2{
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+
+}
+
+.news p{
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.banner{
+    border: 2px solid black;
+    width: 20%;
+    padding:5px;
+}
+
+.banner img{
+    margin-bottom: 10px;
+}
+
+.footer{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .logo{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+        background-image: url(https://fakeimg.pl/150x150/);
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .nav li {
+		width: 50%;
+		margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        	
+	}
+
+    .content{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .news{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+}
+
